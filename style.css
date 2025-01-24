@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --main-white: #FFFFFF;
+    --second-gray: #C0C0C0;
+    --bold-red: #EC2F46;
+    --button-color: #167BF7;
+    --background-color: #00030C;
+    --main-font: 'inter';
+    --botao-azul-efeito: #3c90f6;;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-white);
+    font-family: var(--main-font);
+    font-weight: 400;
+}
+
+.main { 
+    background-image: url("./assets/Background.png");
+    background-repeat:no-repeat;
+    background-size:contain; 
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    text-align:center;
+    align-items: center;
+
+}
+
+.container__button{
+    background-color: var(--button-color);
+    color: var(--main-white);
+    border-radius: 8px;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.second_button{
+    background-color: transparent;
+    border: 2px solid;
+    color: var(--main-white);
+    text-decoration: none;
+    display: block;
+}
+
+.container__aviso{
+    color: var(--second-gray);
+    font-size: 12px;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.container_secundario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 6em 10em;
+
+}
+
+.imagem_secundaria{
+    width:80%;
+}
+
+.disc_title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+}
+
+.container_box_secundaria{
+    padding: 2em;
+}
+
+.disc_text{
+    color: var(--second-gray);
+}
+
+.container__button.botao_terceiro {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos__lista{
+   display:flex; 
+   justify-content: center;
+   list-style-type: none;
+   margin: 5em 0;
+}
+
+.dispositivos{
+    text-align:center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--main-white);
+}
+
+.rodape{
+    text-align:center;
+    margin: 5em 3em;
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--main-white);
+}
+.rodape__lista{
+    display:flex;
+    list-style-type:none;
+    justify-content: center; 
+    margin-bottom: 1em; 
+}
+
+.lista__link{
+    margin-right: 2em;
+}
+
+.lista__ancoras{
+    text-decoration: none;
+    color: var(--main-white);
+
+}
+
+.alura__logo{
+    margin-bottom: 1em;
+}
+
+.rodape__texto{
+    margin-bottom: 1em;
+    font-size: 14px;
+    color: var(--second-gray);
+}
+
+.lista__link a:hover{
+    color: var(--button-color);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__button:hover{
+    background-color: var(--botao-azul-efeito);
+}
